@@ -1,0 +1,139 @@
+/* --------------- */
+/* Headers */
+/* --------------- */
+
+header {
+  height: 6.4rem;
+  position: relative;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.svg-logo {
+  height: 4.2rem;
+  border-radius: 50%;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link:link, .main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover, .main-nav-link:active {
+  color: #cf711f;
+}
+
+.btn-nav-contact {
+  border: none;
+  cursor: pointer;
+  background-color: #e1e1e1;
+  padding: 1.2rem 2.4rem;
+  border-radius: 100rem;
+}
+
+/* --------------- */
+/* Hero Section */
+/* --------------- */
+
+.hero-section {
+  margin: 8.4rem 0;
+}
+
+.hero-text-box {
+  /*temp*/
+  /* width: 80%; */
+}
+
+.hero-text-skills {
+  display: grid;
+  grid-template-columns: 9rem auto;
+  gap: 1.2rem;
+  /* justify-items: center; */
+}
+
+.short-intro {
+  font-size: 1.6rem;
+  color: #626262d4;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+}
+
+.hero-text-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 8.4rem;
+}
+
+
+.hero-img-box {
+  position: relative;
+  grid-column: 2 / -1;
+}
+
+.hero-skills-tag {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  background-color: #fe8e3e;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  letter-spacing: 1.8px;
+}
+
+.skill2 {
+  background-color: #fb6900e7;
+  color: #f1f3f5e6;
+}
+
+.skill3 {
+  background-color: black;
+  color: #f1f3f5e6;
+}
+
+.skill4 {
+  background-color: #e1e1e1;
+
+}
+
+
+.cta-btn {
+  border: none;
+  border-radius: 120rem;
+  width: 12rem;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #fe5b02;
+  letter-spacing: 1.5px;
+  font-size: 1.6rem;
+}
+
+.hero-img-back {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fe5b02;
+  height: 20rem;
+  align-self: end;
+  transform: rotate(45%);
+}
