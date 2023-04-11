@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
   </head>
   <body>
     <header>
@@ -26,7 +27,7 @@
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li>
-              <a href="#" class="main-nav-link">About Me</a>
+              <a href="#aboutme-section-id" class="main-nav-link">About Me</a>
             </li>
             <li>
               <a href="#" class="main-nav-link">Projects</a>
@@ -52,11 +53,11 @@
             </text>
           </svg>
         </a>
-        <button class="btn-nav-contact">Contact Me</button>
+        <a href="#cta-section-id" class="btn-nav-contact">Contact Me</a>
       </div>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section" id="hero-section-id"> 
         <div class="container grid grid-3-cols">
           <div class="hero-text-box">
             <div class="hero-text-info">
@@ -64,25 +65,158 @@
                 My name is <strong> Nayan </strong>
               </h1>
               <p class="short-intro">
-                I am a enthuastic Developer with passion on my mind and grave on
-                your hand.
+                I am a self-taught, persistant Developer.
               </p>
-              <button class="cta-btn">Hire Me</button>
+              <a href="#cta-section-id" class="cta-btn">Hire Me</a>
             </div>
             <div class="hero-text-skills">
-              <span><a href="#" class="hero-skills-tag skill1">C++</a></span>
-              <span><a href="#" class="hero-skills-tag skill2">HTML</a></span>
-              <span><a href="#" class="hero-skills-tag skill3">CSS</a></span>
-              <span
-                ><a href="#" class="hero-skills-tag skill4">javascript</a></span
-              >
+              <span><a class="hero-skills-tag skill1">C++</a></span>
+              <span><a class="hero-skills-tag skill2">HTML</a></span>
+              <span><a class="hero-skills-tag skill3">CSS</a></span>
+              <span><a class="hero-skills-tag skill4">javascript</a></span>
             </div>
           </div>
           <div class="hero-img-box">
-            <span class="hero-img-back"></span>
+            <div class="hero-img-back">
+              <figure class="hero-img-container">
+                <img
+                  src="img/hero-img-2.png"
+                  alt="it's picture of Portfolio Owner"
+                  class="hero-img"
+                />
+              </figu>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects-section" id="projects-section-id">
+        <div class="container projects-box">
+          <div class="projects-head">
+            <h2 class="secondary-heading">Latest Projects</h2>
+            <ion-icon name="filter-outline" class="icon"></ion-icon>
+          </div>
+          <div class="projects-info">
+            <div class="project1">
+              <figure class="project-img-container">
+                <a target="_blank" href="https://hatke42.github.io/ominifood/" class="projects-link"
+                  ><img
+                    src="img/project1.jpg"
+                    alt="First project image which is omnifood"
+                    class="projects-img"
+                  />
+                </a>
+              </figure>
+              <p class="project-no">01</p>
+              <p class="projects-text">Omnifood</p>
+            </div>
+            <div class="project2">
+              <figure class="project-img-container">
+                <a target="_blank" href="https://hatke42.github.io/meme-maker/" class="projects-link"
+                  ><img
+                    src="img/project2.jpg"
+                    alt="First project image which is omnifood"
+                    class="projects-img"
+                  />
+                </a>
+              </figure>
+              <p class="project-no">02</p>
+              <p class="projects-text">Meme-Maker</p>
+            </div>
+            <div class="project3">
+              <figure class="project-img-container">
+                <a target="_blank" href="https://hatke42.github.io/momentum/" class="projects-link"
+                  ><img
+                    src="img/project1.jpg"
+                    alt="First project image which is omnifood"
+                    class="projects-img"
+                  />
+                </a>
+              </figure>
+              <p class="project-no">03</p>
+              <p class="projects-text">Momentum-clone</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aboutme-section" id="aboutme-section-id">
+        <div class="container">
+        <h2 class="secondary-heading">About Me</h2>
+        <div class="profile-card">
+           <figure class="profile-back">
+            <img src="img/profile_back.jpg" alt="it's background image computer with coffee.">
+           </figure>
+           <img src="img/profile_img.jpg" alt="it's profile picture of Portfolio Owner" class="profile-img">
+           <div class="profile-info-text">
+             <p>Hello, My name is Nayan Chaudhari. I am from Mehsana, Gujarat, India. Currently, I'm developing a future-ready tech mindset.</p>
+             <br>
+             <p>I love working on a variety of technologies. My goal is to build applications that solve real-world problems and provide users with an awesome experience.</p>
+           </div>
+        </div>
+      </div>
+      </section>
+      <section class="cta-section" id="cta-section-id">
+        <div class="container cta-container">
+          <div class="cta-box">
+            <div class="cta-header">
+              <ion-icon name="Mail-outline" class="getintouch-icon"></ion-icon>
+              <h2>Get in Touch</h2>
+            </div>
+            <div class="cta-body">
+              <form class="cta-form" name="sign-up" netlify>
+                <div>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div>
+                  <textarea name="message" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+                </div>
+                <button class="btn btn--form">Send Message</button>
+              </form>
+              <div class="social-info">
+                <h3>Other Options to reach out to me.</h3>
+                <div class="scoial-links">
+                  <div><a target="_blank" href="mailto:nayanchaudhary42@gmail.com" class="social-link"><ion-icon name="mail-outline"></ion-icon><span> nayanchaudhary42@gmail.com</span></span></a></div>
+                  <div><a target="_blank" href="https://www.instagram.com/nayan__chaudhari/" class="social-link"><ion-icon name="logo-instagram"></ion-icon><span> @nayan__chaudhari</span></span></a></div>
+                  <div><a target="_blank" href="https://github.com/Hatke42/" class="social-link"><ion-icon name="logo-github"></ion-icon></ion-icon><span> hatke42</span></span></a></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="container footer-container">
+        <a href="#"><ion-icon name="chevron-up-outline" class="gototop"></ion-icon></a>
+        <ul class="footer-links">
+          <li><a target="_blank" href="https://www.linkedin.com/in/nayan-chaudhary-70378b131/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a target="_blank" href="https://github.com/Hatke42/" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/nayan__chaudhari/" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <p>&copy; Copyright 2023 Nayan Chaudhari</p>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
