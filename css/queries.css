@@ -134,6 +134,46 @@
     top: -50%;
     left: 12%;
   }
+
+  .nav-bar {
+    display: block;
+    font-size: 3.2rem;
+    position: relative;
+    z-index: 99999;
+  }
+
+  .main-nav {
+    position: relative;
+  }
+
+  .main-nav-list {
+    position: absolute;
+    top: -1.8rem;
+    left: -100vw;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.97);
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    gap: 10rem;
+    transition: 0.5s;
+  }
+
+  .main-nav-list.active {
+    left: -6rem;
+  }
+
+  .main-nav-list.active .main-nav-link:link {
+    font-size: 2.4rem;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .main-nav-list.active .main-nav-link:hover {
+    color: #707070;
+  }
 }
 
 /* --------------- */
